@@ -1,0 +1,15 @@
+bin/
+*DS_Store
+target/
+classes/
+.settings/
+.project
+.classpath
+.buildpath
+.externalToolBuilders/
+maven-eclipse.xml
+release.properties
+*.iml
+\.idea/
+*/overlays/
+log.txt

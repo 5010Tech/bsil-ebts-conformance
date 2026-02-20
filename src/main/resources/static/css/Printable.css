@@ -1,0 +1,81 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+#errorStrongSting, #errorString{
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding-bottom: 20px;
+}
+
+#successStrongSting, #successString {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+
+
+.h3, h3 {
+    font-size: 175%;
+    font-weight: normal;
+    text-align:center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+
+table .thead-dark th {
+    color: #fff;
+    background-color: #212529;
+    border-color: #32383e;
+}
+table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+table td, table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+    border-bottom: 2px solid #dee2e6;
+}
+th {
+    text-align: inherit;
+}
+
+table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+table td, table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+
+.odd {
+  background-color: #e8e8e8/*rgba(0, 0, 0, 0.05);*/
+}
+
+@page landScape{
+     mso-page-orientation: landscape;
+     /*size: 841.95pt 595.35pt;  EU A4 */
+     size:11.0in 8.5in;  /* US Letter */
+ }
+ 
+ div.landscape {page: landscape;}

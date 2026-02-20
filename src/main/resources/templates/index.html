@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>EBTS Conformance Tool</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!--<link href="webjars/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet"/>-->
+        <link href="/css/superhero_bootstrap.min.css" rel="stylesheet"/>
+        <script src="webjars/jquery/3.3.1/jquery.min.js"></script>
+        <script src="webjars/bootstrap/4.1.0/js/bootstrap.bundle.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('input[type=file]').change(function(e) {
+                    var filename = e.target.files[0].name;
+                    $('.custom-file-label').html(filename);
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container-fluid px-0 mx-0" style="width: 100%;">
+            <div class="row no-gutters" >
+                <div class="col"></div>
+                <div class="col-9">
+                    <nav class="navbar navbar-expand navbar-dark bg-dark">
+                        <a class="navbar-brand navbar-brand-logo mr-auto">
+                            <div class="logo">
+                                <img src="images/DFBA_Logo.png" height="90px" width="90px"/>
+                            </div>
+                        </a>
+                        <div class="mx-auto">
+                            <h4 class="text-center">Defense Forensics and Biometrics Agency<br/>Biometric Interoperability and Standards Compliance Office<br/>EBTS Conformance Tool</h4></div>
+                        <a class="navbar-brand navbar-brand-logo ml-auto">
+                            <div class="logo">
+                                <img src="images/DFBA_Logo.png" height="90px" width="90px"/>
+                            </div>
+                        </a>
+                    </nav>
+                    <br/>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row no-gutters" >
+                <div class="col"></div>
+                <div class="col-9">
+                    <div class="card border-primary mb-3">
+                        <div class="card-header bg-primary">BISCO EBTS Conformance Upload</div>
+                        <div class="card-body">
+                            <form method="POST" action="/result" enctype="multipart/form-data">
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">EBTS File</label>
+                                    <div class="custom-file col-sm-10">
+                                        <input type="file" class="custom-file-input btn btn-primary" id="file" name="file" required="true"/>
+                                        <label class="custom-file-label" for="file">Choose EBTS File</label>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="spec" class="col-sm-2 col-form-label">EBTS Specification:</label>
+                                    <select class="form-control col-sm-10" name="spec" required="true">
+                                        <option value="">Select an EBTS Specification</option>
+                                        <option value="EBTS 1.2">EBTS 1.2</option>
+                                        <option value="EBTS 4.1">EBTS 4.1</option>
+                                        <option value="FBI 10.0">FBI 10.0</option>
+                                        <option value="NATO STANAG 4715">NATO STANAG 4715</option>
+                                        <option value="INTERPOL 5.3">INTERPOL 5.3</option>
+                                        <option value="INTERPOL 6.0">INTERPOL 6.0</option>
+                                    </select>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12">
+                                        <button type="submit" class="btn btn-primary" >Validate</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,241 @@
+AF	Afghanistan
+AC	Africa
+AA	Albania
+AN	Algeria
+AD	Andorra
+AO	Angola
+AY	Antarctica
+AI	Antigua and Barbuda (formerly Antigua)
+AT	Argentina
+AP	Armenia
+AJ	Aruba
+AS	Australia
+AU	Austria
+AV	Azerbaijan
+AQ	Azores Islands
+BD	Bahamas, The
+BE	Bahrain (Bahrein)
+BW	Balearic Islands
+BL	Bangladesh
+BB	Barbados
+BY	Belarus
+BG	Belgium
+BH	Belize (British Honduras)
+DH	Benin (formerly Dahomey)
+BN	Bhutan
+BV	Bolivia
+NX	Bonaire (Netherlands Antilles)
+BP	Bosnia (Hercegovenia, for Reference only)
+BT	Botswana
+BZ	Brazil
+BS	British Solomon Islands(Solomon Islands)
+BX	Brunei
+BU	Bulgaria
+UV	Burkina Faso/Upper Volta
+BR	Burma
+BI	Burundi
+CJ	Cambodia (Kampuchea)
+CM	Cameroon
+CD	Canada
+ZI	Canary Islands
+CV	Cape Verde Islands
+CW	Central African Republic
+CY	Ceylon (now Sri Lanka)
+CF	Chad
+CQ	Chile
+CN	China
+CB	Colombia
+DG	Comoros, Fed Islamic Rep
+CX	Congo
+ZR	Congo Kinshasa (now Zaire)
+DI	Cook Islands
+CR	Costa Rica
+IY	Cote dIvoire (Ivory Coast)
+KC	Croatia
+CC	Cuba
+CS	Cyprus
+EZ	Czech Republic
+CK	Czechoslavakia
+DK	Denmark
+DN	Djibouti
+DM	Dominica
+DR	Dominican Rep
+DU	Ducie Islands
+EM	East Germany
+EU	Ecuador
+EY	Egypt
+EL	El Salvador
+TV	Ellice Islands (now Tuvalu)
+EN	England
+EK	Equatorial Guinea
+ET	Eritrea
+ES	Estonia
+EO	Ethiopia
+FO	Faroe Islands
+FS	Fed States of Micronesia
+FJ	Fiji Islands
+FD	Finland
+FR	Fr Southrn/Antartic Land
+FN	France
+FP	French Polynesia
+GB	Gabon
+GK	Gambia
+GZ	Gaza
+GD	Georgia/Gruzinskaya
+GE	Germany (Also see EM and WG)
+GG	Ghana
+KB	Gilbert Islands (now Kiribati)
+GL	Gilbert and Ellice Islands
+GC	Greece
+GN	Greenland
+GJ	Grenada
+GT	Guatemala
+GI	Guinea
+PG	Guinea-Bissau (formerly Portuguese Guinea)
+GY	Guyana (Includes French Guiana)
+HT	Haiti
+HC	Hercegovena
+NE	Holland (Netherlands)
+HD	Honduras
+HK	Hong Kong
+HU	Hungary
+IC	Iceland
+II	India
+IO	Indonesia
+IR	Iran
+IQ	Iraq
+IE	Ireland
+IS	Israel
+IT	Italy
+JM	Jamaica
+JA	Japan
+JO	Jordan
+JU	Juan de Nova Island
+KT	Kazakhstan
+KE	Kenya
+KV	Kosovo
+KU	Kuwait
+KZ	Kyrgyzstan
+LS	Laos
+LT	Latvia
+LN	Lebanon
+LE	Lesotho
+LB	Liberia
+LY	Libya
+LI	Liechtenstein
+LH	Lithuania
+LX	Luxembourg
+OC	Macao (Macau)
+ZD	Macedonia
+MP	Madagascar (included in Malagasy Republic)
+MF	Malawi
+MZ	Malaysia
+MV	Maldives
+ML	Mali
+MY	Malta
+KH	Manahiki Island
+ZB	Martinique
+MU	Mauritania
+UM	Mauritius
+YO	Mayotte
+MM	Mexico
+LD	Moldova
+MJ	Monaco
+MG	Mongolia
+XB	Montenegro
+MQ	Morocco
+ZO	Mozambique
+NR	Nauru
+NP	Nepal
+TS	Nevis and Saint Christopher Kitts
+NO	New Guinea (now Papua New Guinea)
+HN	New Hebrides (now Vanuata)
+NZ	New Zealand
+NF	Newfoundland (Includes Labrador; Canadian Province)
+NU	Nicaragua
+NN	Niger
+NG	Nigeria
+IU	Niue
+KN	North Korea
+NW	Norway
+OM	Oman
+PK	Pakistan
+PM	Panama
+PF	Paracel Islands
+PV	Paraguay
+RC	Peoples Republic of China
+ST	People’s Democratic Republic of Yemen
+PU	Peru
+PI	Philippines
+PO	Poland
+PT	Portugal
+PR	Puerto Rico
+QA	Qatar
+RB	Republic of Congo, Brazzaville
+PD	Republic of Palau
+RY	Republic of Yemen
+RH	Rhodesia (now Zimbabwe)
+RU	Romania/Rumania
+RA	Russia
+RW	Rwanda
+GS	S Georgia/S Sandwich Isl
+LU	Saint Lucia
+SH	San Marino
+TP	Sao Tome and Principe
+SB	Saudi Arabia
+SS	Scotland
+SG	Senegal
+XA	Serbia
+SE	Seychelles
+SA	Sierra Leone
+SR	Singapore
+LF	Slovakia
+LO	Slovenia
+RV	Socialist Republic of Vietnam
+SM	Somalia
+SF	South Africa
+KO	South Korea
+SJ	South-Wst Africa (Namibia)
+SX	Soviet Union (USSR/Russia)
+SP	Spain
+RS	Spanish Sahara (now Western Sahara)
+TE	Spratly Islands
+AW	St Kitts/Nevis/Anguilla
+VV	St. Vincent and the Grenadines
+SU	Sudan
+ZC	Suriname
+SW	Swaziland
+SQ	Sweden
+SZ	Switzerland
+SY	Syria
+TW	Taiwan, Republic of China
+TJ	Tajikistan
+TZ	Tanzania, United Republic of
+TH	Thailand
+TO	Togo
+TG	Tonga
+TQ	Tongareva
+TT	Trinidad / Tobago
+TC	Trucial States (now United Arab Emirates)
+TF	Tuamontu Archipelago
+TU	Tunisia
+TY	Turkey
+UR	Turkmenistan
+TR	Turks and Caicos Islands
+UG	Uganda
+UK	Ukraine
+UA	United Arab Rep
+UN	United Kingdom
+US	United States
+XX	Unknown
+YY	Unlisted country (Any foreign country not included in the list)
+UY	Uruguay
+UZ	Uzbekistan
+VZ	Venezuela
+WL	Wales
+WB	West Bank
+WN	West Indies
+WS	Western Samoa
+YE	Yemen Arab Republic
+YG	Yugoslavia
+ZM	Zambia

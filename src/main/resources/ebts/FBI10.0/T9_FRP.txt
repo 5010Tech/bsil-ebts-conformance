@@ -1,0 +1,84 @@
+0	Unknown fingerprint
+00	Unknown fingerprint
+1	Right thumb
+01	Right thumb
+2	Right index finger
+02	Right index finger
+3	Right middle finger
+03	Right middle finger
+4	Right ring finger
+04	Right ring finger
+5	Right little finger
+05	Right little finger
+6	Left thumb
+06	Left thumb
+7	Left index finger
+07	Left index finger
+8	Left middle finger
+08	Left middle finger
+9	Left ring finger
+09	Left ring finger
+10	Left little finger
+11	Plain right thumb
+12	Plain left thumb
+13	Plain   right   four   fingers (may include extra digits)
+14	Plain left four fingers (may include extra digits)
+15	Left & right thumbs
+16	Right extra digit
+17	Left extra digit
+18	Unknown friction ridge
+19	EJI or tip
+20	Unknown palm
+21	Right full palm
+22	Right writer’s palm
+23	Left full palm
+24	Left writer’s palm
+25	Right lower palm
+26	Right upper palm
+27	Left lower palm
+28	Left upper palm
+29	Right other
+30	Left other
+31	Right interdigital
+32	Right thenar
+33	Right hypothenar
+34	Left interdigital
+35	Left thenar
+36	Left hypothenar
+37	Right grasp
+38	Left grasp
+40	Right index/middle
+41	Right middle/ring
+42	Right ring/little
+43	Left index/middle
+44	Left middle/ring
+45	Left ring/little
+46	Right index/left index
+47	Right index/middle/ring
+48	Right middle/ring/little
+49	Left index/middle/ring
+50	Left middle/ring/little
+81	Right carpal delta area
+82	Left carpal delta area
+83	Right full palm, including  writer's palm
+84	Left full palm, including writer's palm
+60	Unknown sole
+61	Sole – right foot
+62	Sole – left foot
+63	Unknown toe
+64	Right big toe
+65	Right second toe
+66	Right middle toe
+67	Right fourth toe
+68	Right little toe
+69	Left big toe
+70	Left second toe
+71	Left middle toe
+72	Left fourth toe
+73	Left little toe
+74	Front/ball of right foot
+75	Back/heel of right foot
+76	Front/ball of left foot
+77	Back/heel of left foot
+78	Right middle of foot
+79	Left middle of foot

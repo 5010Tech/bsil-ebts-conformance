@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>EBTS Conformance Results</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!--<link href="webjars/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet"/>-->
+        <link href="/css/superhero_bootstrap.min.css" rel="stylesheet"/>
+        <script src="webjars/jquery/3.3.1/jquery.min.js"></script>
+        <script src="webjars/bootstrap/4.1.0/js/bootstrap.bundle.js"></script>
+        <style>
+            #xmlDiv {
+                counter-reset: line;
+            }
+            code {
+                counter-increment: line;
+            }
+            code:before{
+                content: counter(line);
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="container-fluid px-0 mx-0" style="width: 100%;">
+            <div class="row no-gutters" >
+                <div class="col"></div>
+                <div class="col-9">
+                    <nav class="navbar navbar-expand navbar-dark bg-dark">
+                        <a class="navbar-brand navbar-brand-logo mr-auto">
+                            <div class="logo">
+                                <img src="images/DFBA_Logo.png" height="90px" width="90px"/>
+                            </div>
+                        </a>
+                        <div class="mx-auto">
+                            <h4 class="text-center">Defense Forensics and Biometrics Agency<br/>Biometric Interoperability and Standards Compliance Office<br/>EBTS Conformance Tool</h4></div>
+                        <a class="navbar-brand navbar-brand-logo ml-auto">
+                            <div class="logo">
+                                <img src="images/DFBA_Logo.png" height="90px" width="90px"/>
+                            </div>
+                        </a>
+                    </nav>
+                    <br/>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row no-gutters" >
+                <div class="col" >
+                    <div class="card border-primary sticky-top" style="font-size: 13px;" >
+                        <div class="card-header bg-primary">Submission Details</div>
+                        <div class="card-body p-0 m-0">
+                            <div class="form-group">
+                                <b><label class="col-form-label">Submitted File:</label></b>
+                                <p style="max-width: 170px; word-wrap: break-word; font-size: 10px;" th:text="${results.transactionFileName}"></p>
+                                <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#xmlModal" th:if="${results.xmlLines != null AND #lists.size(results.xmlLines) > 0}">
+                                    View XML
+                                </button>
+                            </div>
+                            <div class="form-group">
+                                <b><label class="col-form-label">EBTS Specification:</label></b>
+                                <p th:text="${results.specFileName}"></p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="btn-group" style="width: 100%;">
+                                <button class="btn btn-primary btn-sm" type="button" th:onclick="'exportResults();'">Export Results</button>
+                                <button class="btn btn-primary btn-sm dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <form id="invisibleForm" action="export" method="post" target="_blank">
+                                    <!--<input id="exportResults" name="results" type="hidden"/>-->
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item">
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio-input" name="word" value="true" id="wordRadio" onchange="displayExport();"/>
+                                                <label class="form-radio-label" for="word">Word Doc</label>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item">
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio-input" name="word" value="false" id="xlsRadio" onchange="displayExport();"/>
+                                                <label class="form-radio-label" for="xls">Excel Doc</label>
+                                            </div>
+                                        </a>
+                                        <div id="wordExport" style="display: none">
+                                            <a class="dropdown-item">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="engineerTable" value="true" id="engineerTable"/>
+                                                    <label class="form-check-label" for="engineerTable">Engineering Table</label>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown-item">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="executiveTable" value="true" id="executiveTable"/>
+                                                    <label class="form-check-label" for="executiveTable">Executive Table</label>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown-item">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="errorTable" value="true" id="errorTable"/>
+                                                    <label class="form-check-label" for="errorTable">Executive Error Only Table</label>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div id="xlsExport" style="display: none">
+                                            <a class="dropdown-item">
+                                                <div class="form-radio">
+                                                    <input class="form-radio-input" type="radio" name="xlsExport" value="engineerTable" id="engineerTableXls"/>
+                                                    <label class="form-radio-label" for="engineerTableXls">Engineering Table</label>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown-item">
+                                                <div class="form-radio">
+                                                    <input class="form-radio-input" type="radio" name="xlsExport" value="executiveTable" id="executiveTableXls"/>
+                                                    <label class="form-radio-label" for="executiveTableXls">Executive Table</label>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown-item">
+                                                <div class="form-radio">
+                                                    <input class="form-radio-input" type="radio" name="xlsExport" value="errorTable" id="errorTableXls"/>
+                                                    <label class="form-radio-label" for="errorTableXls">Executive Error Only Table</label>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="card border-danger pb-1" th:if="${results.processingErrors != null AND #lists.size(results.processingErrors) > 0}">
+                        <div class="card-header bg-danger">Processing Errors</div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                            <th:block th:each="error : ${results.processingErrors}">
+                                <li class="list-group-item list-group-item-danger mb-1" th:text="${error}"></li>
+                            </th:block>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card border-light p-0">
+                        <div class="card-header bg-light">
+                            <span th:text="'Total Number of Fields: ' + ${results.numFields}"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="card border-danger p-0" th:if="${results.numViolations > 0}">
+                        <div class="card-header bg-danger">
+                            <span th:text="'Total Number of Violation: ' + ${results.numViolations}"></span>
+                            <button class="btn btn-outline-dark btn-sm float-right" type="button" data-toggle="collapse" data-target="#violationDisplay" aria-expanded="false" aria-controls="violationDisplay">
+                                Details
+                            </button>
+                        </div>
+                        <div class="collapse" id="violationDisplay">
+                            <div class="card card-body">
+                                <ul class="list-group list-group-flush">
+                                <th:block th:each="violation : ${results.violationDetails}">
+                                    <a class="list-group-item list-group-item-action" th:if="${violation.present}" th:href="@{'#' + ${violation.fieldLocation}}" th:text="${violation.fieldLocation} + ' - ' + ${violation.message}"></a>
+                                    <li th:if="${!violation.present}" class="list-group-item" th:text="${violation.fieldLocation} + ' - ' + ${violation.message}"></li>
+                                </th:block>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="alert alert-success" role="alert" th:if="${results.numViolations == 0}" th:text="'Total Number of Violation: ' + ${results.numViolations}"></div>
+
+                    
+                    <div class="card border-danger pt-1" th:if="${results.schemaViolations != null AND #lists.size(results.schemaViolations) > 0}">
+                        <div class="card-header bg-danger">
+                            <span th:text="'Total Number of XML Schema Violations ' + ${results.numSchemaViolations}"></span>
+                            <button class="btn btn-outline-dark btn-sm float-right" type="button" data-toggle="collapse" data-target="#schemaViolationDisplay" aria-expanded="false" aria-controls="schemaViolationDisplay">
+                                Details
+                            </button>
+                        </div>
+                        <div class="collapse" id="schemaViolationDisplay">
+                            <div class="card card-body">
+                                <ul class="list-group list-group-flush">
+                                <th:block th:each="violation : ${results.schemaViolations}">
+                                    <a class="list-group-item list-group-item-action list-group-item-danger" th:text="${violation.message}" th:href="@{'#'}" th:onclick="'focusOnLine(\'' + ${violation.line} + '\');'"></a>
+                                </th:block>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="xmlModal" tabindex="1" role="dialog" th:if="${results.xmlLines != null AND #lists.size(results.xmlLines) > 0}">
+                        <div class="modal-dialog modal-xl" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" th:text="${results.transactionFileName}"></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body modal-xl">
+                                    <div id="xmlDiv" style="overflow: auto">
+                                        <pre class="float-left" style="margin: 0; padding: 0; line-height: 10px;">
+                                            <th:block th:each="line, lineCount : ${results.xmlLines}">
+                                                <code th:id="'xmlLine' + ${lineCount.index + 1}" class="float-left" th:if="${#lists.contains(results.schemaErrorLines, lineCount.index + 1)}"><mark th:text="${line}" style="background-color: #f5c6cb"></mark></code>
+                                                <code th:id="'xmlLine' + ${lineCount.index + 1}" class="float-left" th:unless="${#lists.contains(results.schemaErrorLines, lineCount.index + 1)}" th:text="${line}"></code>
+                                            </th:block>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br/>
+                    <th:block th:each="rec,recCount : ${results.records}">
+                        <div class="card border-light mb-3">
+                            <div class="card-header bg-light" th:text="${rec.recordType} + ' - ' + ${rec.recordName}"></div>
+                            <div class="card-body">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr class="table-secondary">
+                                            <th>Field Number</th>
+                                            <th>Value</th>
+                                            <th>Pass/Fail</th>
+                                            <th>Mandatory/Optional</th>
+                                            <th>Description</th>
+                                            <th>Message</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <th:block th:each="field,fieldCount : ${rec.fields}">
+                                        <tr th:id="${field.fieldLocation}" class="text-dark" th:styleappend="${field.passed} ? 'background-color: #c3e6cb' : 'background-color: #f5c6cb'">
+                                            <td th:text="${field.fieldLocation}"></td>
+                                            <td th:if="${field.image}" th:style="'max-width: 300px'">
+                                                <img th:src="'data:image/png;base64, ' + ${field.value}" th:style="'max-width: 300px'"/>
+                                            </td>
+                                            <td th:if="${!field.image}" th:utext="${field.value}" th:style="'max-width: 300px'"></td>
+                                            <td th:utext="${field.passed} ? 'PASS' : 'FAIL'"></td>
+                                            <td th:utext="${field.mandatoryOptional}"></td>
+                                            <td th:utext="${field.description}"></td>
+                                            <!--<td th:utext="${field.message != null} ? ${field.message} : 'N/A'"></td>-->
+                                            <td>
+                                                <th:block th:if="${field.passed}">
+                                                    <button class="btn btn-outline-dark btn-sm text-nowrap" type="button" data-toggle="collapse" th:attr="data-target='#message_' + ${recCount.index} + '_' + ${fieldCount.index}"  aria-expanded="false" >
+                                                        Detailed Description 
+                                                    </button>
+                                                    <br/>
+                                                    <br/>
+                                                    <th:block th:if="${field.message != null}">
+                                                        <div class="collapse" th:id="'message_' + ${recCount.index} + '_' + ${fieldCount.index}">
+                                                            <b><span>Field Description: </span></b><span th:text="${field.message != null} ? ${field.message} : 'N/A'"/>
+                                                        </div>
+                                                    </th:block>
+                                                    <th:block th:if="${field.tags != null}">
+                                                        <div class="collapse" th:id="'message_' + ${recCount.index} + '_' + ${fieldCount.index}">
+                                                            <b><span>Field Description: </span>
+                                                            <th:block th:each="tag : ${field.tags}">
+                                                                <br/><span th:text="${tag}"/>
+                                                            </th:block>
+                                                        </div>
+                                                    </th:block>
+                                                </th:block>
+                                                <th:block th:if="${field.message != null}">
+                                                    <div class="collapse" th:id="'message_' + ${recCount.index} + '_' + ${fieldCount.index}">
+                                                        <b><span>Field Description: </span></b><span th:text="${field.message != null} ? ${field.message} : 'N/A'"/>
+                                                    </div>
+                                                </th:block>
+                                                <th:block th:if="${field.tags != null}">
+                                                    <div class="collapse" th:id="'message_' + ${recCount.index} + '_' + ${fieldCount.index}">
+                                                        <b><span>Field Description: </span>
+                                                        <th:block th:each="tag : ${field.tags}">
+                                                            <br/><span th:text="${tag}"/>
+                                                        </th:block>
+                                                    </div>
+                                                </th:block>
+                                                <br/>
+                                                <br/>
+                                                <th:block th:each="error,iter : ${field.errors}">
+                                                    <br th:if="${iter.index > 0}"/>
+                                                    <br th:if="${iter.index > 0}"/>
+                                                    <b><span th:text="'Error ' + ${iter.count} + ' Description: '"/></b>
+                                                    <span th:text="${error.description}"/>
+                                                    <br/>
+                                                    <b><span th:if="${error.message != null AND error.message != ''}" th:text="'Error ' + ${iter.count} + ' Message: '"/></b>
+                                                    <span th:if="${error.message != null AND error.message != ''}" th:text="${error.message}"/>
+                                                    <b><span th:if="${error.message == null OR error.message == ''}" th:text="'Error ' + ${iter.count} + ' Message: N/A'"/></b>
+                                                </th:block>
+                                            </td>
+                                        </tr>
+                                    </th:block>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <br/><br/>
+                    </th:block>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+            
+        </div>
+        
+    </body>
+    <script th:inline="javascript">
+        /*<![CDATA[*/
+            var results = /*[[${resultString}]]*/
+        /*]]>*/
+    </script>
+    <script type="text/javascript">
+//        var results = [# th:text="${resultString}"/]
+        function exportResults() {
+            if($('#wordRadio').is(':checked')) {
+                if($('#engineerTable').is(':checked') || $('#executiveTable').is(':checked') || $('#errorTable').is(':checked')) {
+                    $('#exportResults').val(results);
+                    $('#invisibleForm').submit();
+                }
+                else {
+                    alert("At least one type of export table must be choosen")
+                }
+            }
+            else if($('#xlsRadio').is(':checked')) {
+                if($('#engineerTableXls').is(':checked') || $('#executiveTableXls').is(':checked') || $('#errorTableXls').is(':checked')) {
+                    $('#exportResults').val(results);
+                    $('#invisibleForm').submit();
+                }
+                else {
+                    alert("At least one type of export table must be choosen")
+                }
+            }
+        }
+        
+        function displayExport() {
+            if($('#wordRadio').is(':checked')) {
+                $('#wordExport').show();
+                $('#xlsExport').hide();
+            }
+            else if($('#xlsRadio').is(':checked')) {
+                $('#wordExport').hide();
+                $('#xlsExport').show();
+            }
+        }
+        
+        function focusOnLine(line) {
+            
+            $("#xmlModal").on("shown.bs.modal", function() {
+                console.log(line);
+                setTimeout(function() {
+                    if(line > 10) {
+                        line = line-10;
+                    }
+                    document.getElementById("xmlLine" + line).scrollIntoView(true);
+                }, 250)
+                
+            });
+            $("#xmlModal").modal("toggle");
+            
+        }
+        $("#xmlModal").on("hide.bs.modal", function() {
+            $("#xmlModal").off("shown.bs.modal");
+        });
+    </script>
+    
+</html>

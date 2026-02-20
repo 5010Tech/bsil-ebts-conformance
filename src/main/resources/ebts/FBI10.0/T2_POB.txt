@@ -1,0 +1,640 @@
+EE	Absentee Shawnee
+AF	Afghanistan
+AC	Africa
+AG	Aguascalientes (Mexican State)
+DQ	Ak Chin Indian Community of Maricopa Indian Rsvn, AZ
+AL	Alabama
+DX	Alabama-Coushatta Tribes of TX
+DY	Alabama-Quassarte Tribal Town, OK
+AK	Alaska
+AA	Albania
+AB	Alberta (Canadian Province)
+AN	Algeria
+AM	American Samoa (Islands)
+AD	Andorra
+AO	Angola
+AE	Anguilla
+AY	Antarctica
+AI	Antigua and Barbuda (formerly Antigua)
+AX	Apache Tribe
+DZ	Arapahoe Tribe of the Wind River Rsvn, WY
+AT	Argentina
+AZ	Arizona
+AR	Arkansas
+AP	Armenia
+EA	Aroostook Band of Micmac Indians of ME
+AJ	Aruba
+AH	Ashmore/Cartier Islands
+GV	Assiniboine and Sioux Tribes of Fort Peck Indian Rsvn, MT
+AS	Australia
+AU	Austria
+AV	Azerbaijan
+AQ	Azores Islands
+XC	Bad River Band of Lake Superior Tribe of Chippewa Indians
+BD	Bahamas, The
+BE	Bahrain (Bahrein)
+BA	Baja California (Northern Section) (Mexican State)
+BJ	Baja California (Southern Section) (Mexican State)
+BK	Baker Island
+BW	Balearic Islands
+BL	Bangladesh
+BB	Barbados
+BF	Bassas Da India
+EB	Bay Mills Indian Community, MI
+BY	Belarus
+BG	Belgium
+BH	Belize (British Honduras)
+DH	Benin (formerly Dahomey)
+BM	Bermuda
+BN	Bhutan
+EC	Blackfeet Tribe of the Blackfeet Indian Rsvn of MT
+XP	Bois Forte Band of Chippewa
+BV	Bolivia
+NX	Bonaire (Netherlands Antilles)
+BP	Bosnia (Hercegovenia, for Reference only)
+BT	Botswana
+BQ	Bouvet Island
+BZ	Brazil
+BC	British Columbia (Canadian Province)
+BO	British Indian Ocean Territory
+BS	British Solomon Islands(Solomon Islands)
+VB	British Virgin Islands
+BX	Brunei
+BU	Bulgaria
+UV	Burkina Faso/Upper Volta
+BR	Burma
+ED	Burns Paiute Tribe of the Burns Paiute Indian Colony of OR
+BI	Burundi
+XD	Caddo Tribe
+CA	California
+CJ	Cambodia (Kampuchea)
+CM	Cameroon
+CE	Campeche (Mexican State)
+CD	Canada
+CZ	Canal Zone (United States)
+ZI	Canary Islands
+CV	Cape Verde Islands
+CG	Caroline Islands
+VP	Catawba Indian Nation, SC (AKA Catawba Tribe of SC)
+CP	Cayman Islands
+EF	Cayuga Nation of NY
+CW	Central African Republic
+CY	Ceylon (now Sri Lanka)
+CF	Chad
+XE	Cherokee Nation
+DA	Cheyenne & Arapaho Tribes
+EG	Cheyenne River Sioux Tribe of the Cheyenne River Rsvn, SD
+CI	Chiapas (Mexican State)
+EH	Chickasaw Nation, OK
+CH	Chihuahua (Mexican Border State)
+CQ	Chile
+CN	China
+EI	Chippewa-Cree Indians of the Rocky Boy’s Rsvn MT
+EJ	Chitimacha Tribe of LA
+HR	Christmas Island
+DW	Citizen Potawatomi Nation
+DB	Clipperton Island
+CU	Coahuila (Mexican State)
+EP	Cocopah Tribe of AZ
+DD	Cocos (Keeling) Islands
+EQ	Coeur D’Alene Tribe of the Coeur D’Alene Rsvn, ID
+CL	Colima (Mexican State)
+CB	Colombia
+CO	Colorado
+EV	Colorado River Indian Tribe of CO River Indian Rsvn, AZ & CA
+DP	Comanche Nation
+DG	Comoros, Fed Islamic Rep
+VR	Conf. Tribes of the Coos, Lower Umpqua and Siuslaw Indians of OR
+VQ	Confederated Salish & Kootenai Tribes of the Flathead Rsvn, MT
+VX	Confederated Tribes & Bands of the Yakama Nation, WA
+VW	Confederated Tribes of Siletz Indians-OR(Conf. Tribes Siletz Rsvn)
+EW	Confederated Tribes of the Chehalis Rsvn, WA
+EX	Confederated Tribes of the Colville Rsvn, WA
+FB	Confederated Tribes of the Goshute RSVN, NV and UT
+VU	Confederated Tribes of the Grand Ronde Community of OR
+FE	Confederated Tribes of the Umatilla Rsvn, OR
+FF	Confederated Tribes of the Warm Springs Rsvn of OR
+CX	Congo
+ZR	Congo Kinshasa (now Zaire)
+CT	Connecticut
+DI	Cook Islands
+WC	Coquille Tribe of OR
+DJ	Coral Sea Islands
+CR	Costa Rica
+IY	Cote dIvoire (Ivory Coast)
+FH	Coushatta Tribe of LA
+WH	Cow Creek Band of Umpqua Indians of OR
+WJ	Cowlitz Indian TRIBE< WA
+KC	Croatia
+FK	Crow Creek Sioux Tribe of the Crow Creek Rsvn, SD
+FM	Crow Tribe of MT
+CC	Cuba
+CS	Cyprus
+EZ	Czech Republic
+CK	Czechoslavakia
+DE	Delaware
+XF	Delaware Nation
+XQ	Delaware Tribe of OK
+DK	Denmark
+DL	Devils Lake Sioux Tribe
+DC	Dist of Columbia
+DF	Distrito Federal (Mexico, D.F.)
+DN	Djibouti
+DM	Dominica
+DR	Dominican Rep
+DU	Ducie Islands
+WM	Duckwater Shosone Tribe of the Duckwater Rsvn, NV
+DO	Durango (Mexican State)
+EM	East Germany
+FQ	Eastern Band of Cherokee Indians of NC
+XG	Eastern Shawnee Tribe
+FT	Eastern Shosone Tribe WY
+EU	Ecuador
+EY	Egypt
+EL	El Salvador
+TV	Ellice Islands (now Tuvalu)
+FU	Ely Shosone Tribe of NV
+EN	England
+EK	Equatorial Guinea
+ET	Eritrea
+ES	Estonia
+EO	Ethiopia
+ER	Europa Island
+FA	Falkland Islands
+FO	Faroe Islands
+FS	Fed States of Micronesia
+FJ	Fiji Islands
+FD	Finland
+FW	Flandreau Santee Sious Tribe of SD
+FL	Florida
+FC	Fond du Lac
+WO	Forest County Potawatomi Community of WI
+FY	Fort Belknap Indian Community of Fort Belknap Rsvn of MT
+WP	Fort McDermitt Paiute & Shosone Tribes of F.M. Indians Rsvn, NV & OR
+FZ	Fort McDowell Yavapai Nation, AZ
+GQ	Fort Mojave Indian Tribe of AZ, CA & NV
+WQ	Fort Sill Apache Tribe of OK
+FR	Fr Southrn/Antartic Land
+FN	France
+FG	French Guiana
+FP	French Polynesia
+GB	Gabon
+GK	Gambia
+GZ	Gaza
+GA	Georgia
+GD	Georgia/Gruzinskaya
+GE	Germany (Also see EM and WG)
+GG	Ghana
+RG	Gibraltar
+GX	Gila River Indian Community of Gila River Indian Rsvn, AZ
+KB	Gilbert Islands (now Kiribati)
+GL	Gilbert and Ellice Islands
+GO	Glorioso Islands
+XO	Grand Portage Band of Lake Superior Chippewa
+HB	Grand Traverse Band of Ottawa and Chippewa Indians, MI
+GC	Greece
+GN	Greenland
+GJ	Grenada
+GP	Guadeloupe
+GM	Guam
+GU	Guanajuato (Mexican State)
+GT	Guatemala
+GF	Guernsey
+GR	Guerrero (Mexican State)
+GI	Guinea
+PG	Guinea-Bissau (formerly Portuguese Guinea)
+GY	Guyana (Includes French Guiana)
+HT	Haiti
+HF	Hannahville Indian Community, MI
+HG	Havasupai Tribe if the Havasupai Rsvn, AZ
+HI	Hawaii
+HE	Heard Isl/McDonald Isl
+HC	Hercegovena
+HL	Hidalgo (Mexican State)
+HJ	Hoh Indian Tribe of the Hoh Indian Rsvn, WA
+NE	Holland (Netherlands)
+HD	Honduras
+HK	Hong Kong
+HM	Hopi Tribe of Arizona
+WR	Houlton Band of Maliseet Indians of ME
+HO	Howland Island
+HP	Hualapai Indian Tribe of Hualapai Indian Rsvn, AZ
+HU	Hungary
+IC	Iceland
+ID	Idaho
+IL	Illinois
+II	India
+IN	Indiana
+IO	Indonesia
+IP	Internat License
+IA	Iowa
+IW	Iowa Tribe
+HQ	Iowa Tribe of KS & NB
+IR	Iran
+IQ	Iraq
+IE	Ireland
+IS	Israel
+IT	Italy
+JL	Jalisco (Mexican State)
+JM	Jamaica
+HW	Jamestown S’Klallam Tribe of WA
+JN	Jan Mayen
+JA	Japan
+JR	Jarvis Island
+HX	Jena Band Choctaw Indians, LA
+JE	Jersey
+HZ	Jicarilla Apache Nation, NM
+JI	Johnston Island
+JO	Jordan
+JU	Juan de Nova Island
+IF	Kaibab Band of Paiute Indians of the Kaibab Indian Rsvn, AZ
+IG	Kalispel Indian Community of Kalispel Indian Rsvn WA
+KS	Kansas
+IH	Kaw Nation, OK
+KT	Kazakhstan
+KY	Kentucky
+KE	Kenya
+OY	Kewa Pueblo. NM (Formerly Pueblo of Santa Domingo, NM)
+IK	Keweenaw Bay Indian Community, MI
+ZE	Kialegee Tribe Town, OK
+WU	Kickapoo Traditional Tribe of TX
+KK	Kickapoo Tribe
+IV	Kickapoo Tribe of Indians of the Kickapoo Rsvn in KS
+KI	Kingman Reef
+KW	Kiowa
+WX	Klamath Tribes, OR
+KV	Kosovo
+IZ	Kotenai Tribe of ID
+KU	Kuwait
+KZ	Kyrgyzstan
+WZ	Lac Courte Oreilles Band of Lake Superior Chippewa Indians, WI
+JB	Lac Vieux Desert Band of Lake Superior Chippewa Indians, MI
+LP	Lac du Flambeau
+LS	Laos
+XR	Las Vegas Tribe of Paiute Indians of Las Vegas Indian Clny, NV
+LT	Latvia
+LN	Lebanon
+LL	Leech Lake Band of Chippewa
+LE	Lesotho
+LB	Liberia
+LY	Libya
+LI	Liechtenstein
+LH	Lithuania
+JD	Little River Band of Ottawa Indians, MI
+JF	Little Traverse Bay Bands of Odawa Indians, MI
+LA	Louisiana
+JG	Lovelock Paiute Tribe of the Lovelock Indian Colony, NV
+JH	Lower Brule Sioux Tribe of the Lower Elwha Rsvn, WA
+JJ	Lower Elwha Tribal Community of the Lower Elwha Rsvn, WA
+XS	Lower Sioux Indian Community in the State of MN
+JK	Lummi Tribe of the Lummi Rsvn, WA
+LX	Luxembourg
+OC	Macao (Macau)
+ZD	Macedonia
+MP	Madagascar (included in Malagasy Republic)
+IM	Madeira Islands
+ME	Maine
+JP	Makah Indian Tribe of the Makah Indian Rsvn, WA
+MF	Malawi
+MZ	Malaysia
+MV	Maldives
+ML	Mali
+MY	Malta
+IB	Man, Isle of
+KH	Manahiki Island
+MB	Manitoba (Canadian Province)
+MK	Mariana Islands (U.S. Trust Territory-U.S.)
+MH	Marshall Islands
+ZB	Martinique
+MD	Maryland
+JQ	Mashantucket Pequot Tribe of CT
+XT	Mashpee Wampanoag Tribe of MA
+MA	Massachusetts
+JS	Match-E-Be-Nash-She-Wish Band of Pottawatomie Indians of MI
+MU	Mauritania
+UM	Mauritius
+YO	Mayotte
+IX	Menominee Indian Nation
+JT	Mescalero Apache Tribe of the Mescalero Rsvn, NM
+JV	Metlakatla Indian Community, Annette Island AK
+MM	Mexico
+MX	Mexico (Mexican State)
+DS	Miami Tribe
+JW	Miccosukee Tribe of Indians, FL
+MI	Michigan
+MC	Michoacan (Mexican State)
+MW	Midway Islands
+LC	Mille Lacs
+MN	Minnesota
+XU	Minnesota Chippewa Tribe, MN
+JX	Missisippi Band of Choctaw Indians
+MS	Mississippi
+MO	Missouri
+XV	Moapa Band of Paiute Indians of NV
+XH	Modoc Tribe
+XW	Mohegan Indian Tribe of CT
+LD	Moldova
+MJ	Monaco
+MG	Mongolia
+MT	Montana
+XB	Montenegro
+RR	Montserrat
+MR	Morelos (Mexican State)
+MQ	Morocco
+ZO	Mozambique
+JY	Muckleshoot Indian Tribe of the Muckleshoot Rsvn, WA
+DT	Muscogee (Creek Tribe)
+JZ	Narragansett Indian Tribe of RI
+NR	Nauru
+KD	Navajo Nation, AZ, NM and UT
+VL	Navassa Island
+NA	Nayarit (Mexican State)
+NB	Nebraska
+NP	Nepal
+NV	Nevada
+TS	Nevis and Saint Christopher Kitts
+NK	New Brunswick (Canadian Province)
+NQ	New Caledonia
+NO	New Guinea (now Papua New Guinea)
+NH	New Hampshire
+HN	New Hebrides (now Vanuata)
+NJ	New Jersey
+NM	New Mexico
+NY	New York
+NZ	New Zealand
+NF	Newfoundland (Includes Labrador; Canadian Province)
+KF	Nez Perce Tribe, ID (Frmrly Listed Nez Perce Tribe of ID)
+NU	Nicaragua
+NN	Niger
+NG	Nigeria
+KG	Nisqually Indian Tribe of the Nisqually Rsvn, WA
+IU	Niue
+KJ	Nooksack Indian Tribe of Washington
+OF	Norfolk Island
+NC	North Carolina
+ND	North Dakota
+KN	North Korea
+KL	Northern Cheyenne Tribe of the North. Chey. Indian Rsvn, MT
+NI	Northern Ireland
+NT	Northwest Territories (Canadian Admin. Division)
+YZ	Northwestern Band of Shosoni Nation of UT (Washakie)
+NW	Norway
+KM	Nottawaseppi Huron Band of Potawatomie, MI- Frmr Hur. Pot., Inc.
+NS	Nova Scotia (Canadian Province)
+NL	Nuevo Leon (Mexican State)
+XN	Nunavut (Canadian Territory)
+OA	Oaxaca (Mexican State)
+OS	Oglala Sioux
+OH	Ohio
+KQ	Ohkay Owingeh, NM (Foremerly the Pueblo of San Juan)
+OI	Okinawa
+OK	Oklahoma
+KX	Omaha Tribe of NB
+OM	Oman
+OZ	Oneida Nation of NY
+OT	Oneida Tribe of Indians of Wisconsin
+LG	Onondaga Nation of NY
+ON	Ontario (Canadian Province)
+OR	Oregon
+OG	Osage Nation
+OO	Otoe-Missouria Tribe
+XI	Ottawa Tribe
+XZ	Paiute Indian Tribe of UT
+FV	Paiute-Shosone Tribe of the Fallon Rsvn and Colony, NV
+PK	Pakistan
+PL	Palmyra Atoll
+PM	Panama
+PF	Paracel Islands
+PV	Paraguay
+LJ	Pascua Yaqui Tribe of AZ
+LK	Passamaquoddy Tribe of ME
+PW	Pawnee Tribe
+PA	Pennsylvania
+LM	Penobscot Tribe of ME
+RC	Peoples Republic of China
+ST	People’s Democratic Republic of Yemen
+XJ	Peoria Tribe
+PU	Peru
+PI	Philippines
+PC	Pitcairn, Henderson, Ducie, and Oeno Island
+LQ	Poarch Band of Creek Indians of AL
+LR	Pokagon Band of Potawatomi Indians, MI & IN
+PO	Poland
+PN	Ponca Tribe
+YB	Ponca Tribe of NB
+LV	Port Gamble of Indian Community of the Port Gamble Rsvn, WA
+PT	Portugal
+YC	Prairie Band of Potawatomi Nation, KS
+LW	Prairie Band of Potawatomi Nation, KS
+YD	Prairie Island Indian Community in the State of MN
+PE	Prince Edward Island (Canadian Province)
+PB	Puebla (Mexican State)
+LZ	Pueblo of Acoma, NM
+OB	Pueblo of Cochiti, NM
+OD	Pueblo of Isleta, NM
+OE	Pueblo of Jemez, NM
+OL	Pueblo of Nambe, NM
+OP	Pueblo of Picuris, NM
+YF	Pueblo of Pojoaque, NM
+OQ	Pueblo of San Felipe, NM
+OU	Pueblo of San Ildefonso, NM
+OV	Pueblo of Sandia, NM
+OW	Pueblo of Santa Ana, NM
+OX	Pueblo of Santa Clara, NM
+PH	Pueblo of Taos, NM
+PJ	Pueblo of Tesuque, NM
+PP	Pueblo of Zia, NM
+PX	Pueblo of Zuni, NM
+OJ	Pueblo of of Laguna, NM
+PR	Puerto Rico
+PY	Puyallup Tribe of the Puyallup Rsvn, WA
+PZ	Pyramid Lake Paiute Tribe of the Pyramid Lake Rsvn, NV
+QA	Qatar
+XK	Quapaw Tribe
+PQ	Quebec (Canadian Province)
+QB	Quechan Tribe of the Fort Yuma Indian Rsvn CA & AZ
+QU	Queretaro (Mexican State)
+QC	Quileute Tribe of the Quileute Rsvn, WA
+QD	Quinault Tribe of the Quinault Rsvn, WA
+QR	Quintana Roo (Mexican State)
+YH	Red Cliff Band of Lake Superior Chippewa Indians WI
+RL	Red Lake
+QE	Reno-Sparks Indian Colony, NV
+RB	Republic of Congo, Brazzaville
+PD	Republic of Palau
+RY	Republic of Yemen
+RE	Reunion
+RI	Rhode Island
+RH	Rhodesia (now Zimbabwe)
+RU	Romania/Rumania
+QF	Rosebud Sioux Tribe of the Rosebud Indian Rsvn, SD
+RA	Russia
+RF	Russian Federation
+RW	Rwanda
+GS	S Georgia/S Sandwich Isl
+FX	Sac and Fox
+QG	Sac and Fox Nation of Missouri in KS and NB
+QH	Sac and Fox Tribe of the MS in IA
+QI	Saginaw Chippewa Indian Tribe of MI
+HS	Saint Helena
+LU	Saint Lucia
+QK	Salt River Pima-Maricopa Indian Comm. Of Salt River Rsvn, AZ
+QL	Samish Indian Tribe, WA
+QM	San Carlos Apache Tribe of the San Carlos Rsvn, AZ
+YJ	San Juan Southern Paiute Tribe of AZ
+SL	San Luis Potosi (Mexican State)
+SH	San Marino
+QN	Santee Sioux Nation, NB
+TP	Sao Tome and Principe
+SN	Saskatchewan (Canadian Province)
+SB	Saudi Arabia
+QO	Sauk- Suiattle Indian Tribe of WA
+QP	Sault Sainte Maire Tribe of Chippewa Indians of MI
+SS	Scotland
+SK	Seminole Nation
+QQ	Seminole Tribe of FL-Dan, Big Cyp, Brghtn, Hllywd & Tmp Rsvns
+QS	Seneca Nation of New York
+DV	Seneca-Cayuga Tribes
+SG	Senegal
+XA	Serbia
+SE	Seychelles
+KP	Shakopee
+YK	Shakopee Mdewakanton Sioux Community of MN
+YL	Shawnee Tribe, OK
+QT	Shoalwater Bay Tribe of the Shoalwater Bay Indian Rsvn, WA
+YM	Shoshoe Tribe of the Wind River RSVN, WY
+QV	Shosone-Bannock Tribes of the Fort Hall Rsvn of ID
+QW	Shosone-Paiute Tribes of the Duck Valley Rsvn of NV
+SA	Sierra Leone
+SI	Sinaloa (Mexican State)
+SR	Singapore
+QX	Sisseton-Wahpeton Oyate of the Lake Traverse Rsvn, SD
+QY	Skokomish Indian Tribe of the Skokomish Rsvn, WA
+QZ	Skull Valley Band of Goshute Indians of UT
+LF	Slovakia
+LO	Slovenia
+RD	Snoqualmie Tribe, WA
+RV	Socialist Republic of Vietnam
+YN	Sokaogon Chippewa Community, WI
+SM	Somalia
+SO	Sonora (Mexican State)
+SF	South Africa
+SC	South Carolina
+SD	South Dakota
+KO	South Korea
+SJ	South-Wst Africa (Namibia)
+RJ	Southern Ute Indian Tribe of CO
+SX	Soviet Union (USSR/Russia)
+SP	Spain
+RS	Spanish Sahara (now Western Sahara)
+RK	Spirit Lake Tribe of the Spokane Rsvn, WA
+RM	Spokane Tribe of the Spokane Rsvn, WA
+TE	Spratly Islands
+RN	Squaxin Island Tribe of Squaxin Island Rsvn, WA
+AW	St Kitts/Nevis/Anguilla
+PS	St Pierre and Miquelon
+QJ	St Regis Mohawk Tribe, NY- Frmr St Reg. Band Mohawk Indians
+YI	St. Croix Chippewa Indians of WI
+VV	St. Vincent and the Grenadines
+RO	Standing Rock Sioux Tribe of North & South Dakota
+YQ	Stillaguamish Tribe of WA
+YP	Stockbridge Munsee Community, WI
+SU	Sudan
+RP	Summit Lake Paiute Tribe of NV
+RQ	Suquamish Indian Tribe of the Port Madison Rsvn, WA
+ZC	Suriname
+SV	Svalbard
+SW	Swaziland
+SQ	Sweden
+RT	Swinomish Indians of the Swinomish Rsvn, WA
+SZ	Switzerland
+SY	Syria
+TB	Tabasco (Mexican State)
+TW	Taiwan, Republic of China
+TJ	Tajikistan
+TA	Tamaulipas (Mexican State)
+TZ	Tanzania, United Republic of
+RX	Te-Moak Tribe of W. Shosone Indians of NV
+TN	Tennessee
+TX	Texas
+TH	Thailand
+YR	Thlopthlocco Tribal Town, OK
+RZ	Three Affiliated Tribes of the Fort Berthold Rsvn, ND
+TL	Tlaxcala (Mexican State)
+TO	Togo
+UB	Tohono O’OOdham Nation of AZ
+TK	Tokelau
+UD	Tonawanda Band of Seneca Indians of NY
+TG	Tonga
+TQ	Tongareva
+UE	Tonkawa Tribe of Indians of OK
+UF	Tonto Apache Tribe of AZ
+TT	Trinidad / Tobago
+TM	Tromelin Island
+TC	Trucial States (now United Arab Emirates)
+TD	Trust Territory of Pacific Islands
+TF	Tuamontu Archipelago
+UH	Tulalip Tribes of the Tulalip Rsvn, WA
+TU	Tunisia
+TY	Turkey
+UR	Turkmenistan
+TR	Turks and Caicos Islands
+UC	Turtle Mt Bnd of Chipewa
+UJ	Tuscarora Nation of NY
+VI	U S Virgin Islands
+UG	Uganda
+UK	Ukraine
+UA	United Arab Rep
+XL	United Keetoowah Band of Cherokee Indians
+UN	United Kingdom
+US	United States
+XX	Unknown
+YY	Unlisted country (Any foreign country not included in the list)
+YS	Upper Sioux Community, MN
+UL	Upper Skagit Indian Tribe of WA
+UY	Uruguay
+UT	Utah
+UO	Ute Indian Tribe of the Uintah & Ouray Rsvn, UT
+UP	Ute Mountain Tribe of the Ute Mountain Rsvn, CO, NM & UT
+UZ	Uzbekistan
+VF	Vakama Nation, OK
+VY	Vatican City
+VZ	Venezuela
+VC	Veracruz (Mexican State)
+VT	Vermont
+VA	Virginia
+WK	Wake Island
+WL	Wales
+UQ	Walker River Paiute Tribe of the Walker River Rsvn, NV
+WF	Wallis and Futuna
+UU	Wampanoaq Tribe of Gay Head (Aquinnah) of MA
+WA	Washington
+UW	Washoe Tribe of NV & CA-Carson, Drsslrvll,Woodfrds, Stewrt, Wash
+WB	West Bank
+WN	West Indies
+WV	West Virginia
+XM	Western Delaware Tribe
+WS	Western Samoa
+WE	White Earth
+UX	White Mountain Apache Tribe of the Ft Apache Rsvn, AZ
+WT	Wichita Tribe
+VD	Winnebago Tribe of NB
+YV	Winnemucca Indian Colony of NV
+WI	Wisconsin
+VE	Wyandotte Nation, OK
+WD	Wyandotte Tribe
+WY	Wyoming
+VG	Yakton Sioux Tribe of SD
+VH	Yavapai-Apache Nation of the Camp Verde Indian Rsvn, AZ
+VJ	Yavapai-Prescott Tribe of the Yavapai Rsvn, AZ
+YE	Yemen Arab Republic
+VK	Yerington Paiute Tribe of Yerington Colony & Cambell Rnch, NV
+VO	Yomba Shosone Tribe of the Yomba Rsvn, NV
+YW	Ysleta Del Sur Pueblo of Texas
+YU	Yucatan (Mexican State)
+YG	Yugoslavia
+YT	Yukon (Canadian Territory)
+UI	Yunica-Biloxi Indian Tribe of LA
+ZA	Zacatecas (Mexican State)
+ZM	Zambia
+YX	Zuni Tribe of the Zuni RSVN, NM
