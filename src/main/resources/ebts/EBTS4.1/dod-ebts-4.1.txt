@@ -21,6 +21,9 @@ TRANSACTIONS "Biometric Transactions"
     ERRT "Tenprint Transaction Error"
         1:1 2:1;
 
+    FIDR "Foreign Information Direct Route"
+        1:1 2:1 10:0-20 14:0-14 15:0-8;
+
     MAP "Miscellaneous Applicant"
         1:1 2:1 10:0-20 11:0-10 14:0-14 15:0-8 17:0-6 21:0-10;
 
@@ -56,7 +59,7 @@ TRANSACTIONS "Match Response Transactions"
 
 FIELDS
 
-[M, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
+[M, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, FIDR, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
 ]
 1.001 T1_LEN N 1-x 1
     desc="Record Header";
@@ -87,6 +90,7 @@ FIELDS
         DEU:Unknown Deceased|\
         DPRS:DoD Flat Print Rap Sheet Search|\
         ERRT:Tenprint Transaction Error|\
+        FIDR:Federal Identification Direct Route|\
         MAP:Miscellaneous Applicant|\
         RPSR:Rapid Print Image Search Response|\
         SRE:Submission Results -Electronic|\
@@ -102,14 +106,14 @@ FIELDS
     desc="Date"
     date="CCYYMMDD";
 
-[O, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
+[O, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, FIDR, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
 ]
 1.006 T1_PRY N 1 0-1
     desc="Priority"
     mmap="1|2|3|4|5|6|7|8|9"
     default="4";
 
-[M, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
+[M, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, FIDR, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
 ]
 1.007 T1_DAI ANS 1-x 1
     desc="Destination Agency Identifier"
@@ -129,7 +133,7 @@ FIELDS
     desc="Transaction Control Reference"
     sca="PRINT";
 
-[M, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
+[M, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, FIDR, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
 ]
 1.011 T1_NSR NS 5 1
     desc="Native Scanning Resolution"
@@ -143,13 +147,13 @@ FIELDS
     sca="."
     default="00.00";
 
-[O, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
+[O, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, FIDR, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
 ]
 1.013: T1_DOM ANS 1-x 1
     desc="Domain Name"
     sca="PRINT";
 
-[M, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
+[M, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, FIDR, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
 ]
 1.013..1 T1_DOM_DNM ANS 1-x 1
     desc="Domain Name Implementation"
@@ -161,7 +165,7 @@ FIELDS
     sca="PRINT"
     default="4.1";
 
-[O, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
+[O, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, FIDR, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
 ]
 1.014 T1_GMT AN 15 0-1
     date="YYYYMMDDhhmmssZ"
@@ -171,7 +175,7 @@ FIELDS
     desc="Application Profile Specifications"
     sca="PRINT";
 
-[M, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
+[M, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, FIDR, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
 ]
 1.015..1 T1_DCS_CSI N 1-3 1
     desc="Character Encoding Set Index"
@@ -191,18 +195,18 @@ FIELDS
         UTF-8:8-bit (See NWG 3629 and The Unicode standard)|\
         UTF-32:32-bit (See The Unicode standard)";
 
-[O, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
+[O, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, FIDR, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
 ]
 1.015..3 T1_DCS_CSV ANS 1-16 0-1
     desc="Character Encoding Set Version"
     sca="PRINT";
 
-[O, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
+[O, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, FIDR, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
 ]
 1.016: T1_APS ANS 1-x 1
     desc="Application Profile Specifications";
 
-[M, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
+[M, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, FIDR, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
 ]
 1.016..1 T1_APS_APO ANS 1-x 1
     desc="Application Profile Specifications"
@@ -219,7 +223,7 @@ FIELDS
     sca="PRINT"
     default="4.1";
 
-[O, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
+[O, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, FIDR, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
 ]
 1.017: T1_ANM ANS 1-x 0-1
     desc="Agency Names";
@@ -238,7 +242,7 @@ FIELDS
         GENC:Geopolitical Entities, Names, and Codes|\
         ISO:International Standards Organization  3166-1";
 
-[M, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
+[M, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRL, ERRT, FIDR, LFFS, LFIS, MAP, RPSR, GMR, SRE, SRL, TPRR, TPRS
 ]
 2.001 T2_LEN N 1-8 1
     len="true"
@@ -247,7 +251,7 @@ FIELDS
 2.002 T2_IDC N 1-2 1
     desc="Information Designation Character";
 
-[O, CAR, CNA, CPDR, DEK, DEU, DPRS, MAP, TPRS
+[O, CAR, CNA, CPDR, DEK, DEU, DPRS, FIDR M, MAP, TPRS
 ]
 2.005 T2_RET A 1 1
     desc="Retention Code"
@@ -256,7 +260,7 @@ FIELDS
         N:No"
     default="Y";
 
-[O, CAR, CPDR, DEK, DEU, DPRS, ERRT, MAP, GMR, SRE
+[O, CAR, CPDR, DEK, DEU, DPRS, ERRT, FIDR, MAP, GMR, SRE
 ]
 2.006 T2_ATN ANS 3-30 0-1
     desc="Attention Indicator"
@@ -272,13 +276,13 @@ FIELDS
     nregex="\."
     default="UNKNOWN";
 
-[O, CAR, CPDR, DEK, DEU, DPRS, ERRL, ERRT, LFFS, LFIS, MAP, GMR, SRE, SRL, TPRR, TPRS
+[O, CAR, CPDR, DEK, DEU, DPRS, ERRL, ERRT, FIDR, LFFS, LFIS, MAP, GMR, SRE, SRL, TPRR, TPRS
 ]
 2.007 T2_SCO ANS 9-19 0-9
     desc="Send Copy to"
     sca="PRINTCTRL";
 
-[O, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRT, MAP, RPSR, GMR, SRE, TPRR, TPRS
+[O, CAR, CNA, CPDR, DEK, DEU, DPRS, ERRT, FIDR M, MAP, RPSR, GMR, SRE, TPRR, TPRS
 ]
 2.009 T2_OCA ANS 1-20 0-1
     desc="Originating Agency Case Number"
@@ -308,7 +312,7 @@ FIELDS
     default="0000";
 
 
-[O, CAR, CNA, CPDR, DEK, ERRT, MAP, RPSR, GMR, SRE, SRL
+[O, CAR, CNA, CPDR, DEK, ERRT, FIDR, MAP, RPSR, GMR, SRE, SRL
 ]
 2.014 T2_FBI AN 1-9 0-1000
     desc="FBI Number UCN";
@@ -319,7 +323,21 @@ FIELDS
     desc="State Identification Number"
     sca="-";
 
-[O, LFFS, LFIS, TPRS
+[O, FIDR
+]
+2.016 T2_SOC N 9 1-4
+    desc="Social Security Account Number";
+
+[O, FIDR
+]
+2.017 T2_MNU ANS 4-15 1-4
+    desc="Miscellaneous Identification Number"
+    example="PP-1234567890P"
+    regex_msg="Field not in form @@-************ (@=Alphabet, \
+        *=Alphanumeric):[A-Za-z]{2}-[0-9A-Za-z]+"
+    sca="-";
+
+[O, FIDR, LFFS, LFIS, TPRS
 ]
 2.024 T2_SEX A 1 0-1
     desc="Sex"
@@ -345,7 +363,7 @@ FIELDS
         Y:Male name, No Gender given|\
         Z:Female name, No Gender given";
 
-[O, CAR, CNA, CPDR, DEK, DEU, DPRS, LFFS, LFIS, MAP
+[O, CAR, CNA, CPDR, DEK, DEU, DPRS, FIDR, LFFS, LFIS, MAP
 ]
 2.026 T2_SMT AS 3-10 0-10
     desc="Scars, Marks and Tattoos"
@@ -1202,7 +1220,7 @@ FIELDS
         WHEELCHAIR:WHEELCHAIR|\
         WIRE SUTUR:WIRE SUTURES";
 
-[O, CAR, CNA, CPDR, MAP, DEK, DEU, DPRS, LFFS, LFIS, SRE, GMR
+[O, CAR, CNA, CPDR, MAP, DEK, DEU, DPRS, FIDR, LFFS, LFIS, SRE, GMR
 ]
 2.032 T2_HAI A 3 0-1
     desc="Hair Color"
@@ -1280,6 +1298,13 @@ FIELDS
     mmap="\
         Y:YES";
 
+[M, FIDR
+]
+2.038 T2_DPR N 8 1
+    date="CCYYMMDD"
+    desc="Date Printed"
+    lesseq("T1_DAT");
+
 [O, CAR, CNA, CPDR, DPRS, MAP, GMR, SRE, TPRR, TPRS
 ]
 2.040 T2_OCP ANS 1-50 0-1
@@ -1303,6 +1328,12 @@ FIELDS
     desc="Date of Arrest"
     date="CCYYMMDD"
     lesseq(1.005);
+
+[O, FIDR
+]
+2.046 T2_DOS A 1 1
+    desc="Date of Arrest-Suffix"
+    example="L";
 
 [M, CAR, CNA, CPDR
 ]
@@ -1527,7 +1558,31 @@ FIELDS
     desc="Name"
     sca=",- ";
 
-[O, CAR, CPDR, DEK, DEU, DPRS, MAP, TPRS M
+[O, FIDR
+]
+2.067: T2_IMA ANS 1-100 1
+    desc="Image Capture Equipment"
+    sca="PRINT";
+
+2.067..1 T2_IMA_MAK ANS 1-25 1
+    and("T2_IMA_MODL")
+    and("T2_IMA_SERNO")
+    desc="Equipment Originating Fingerprint Reading System Make"
+    sca="PRINT";
+
+2.067..2 T2_IMA_MODL ANS 1-25 1
+    and("T2_IMA_MAK")
+    and("T2_IMA_SERNO")
+    desc="Originating Fingerprint Reading System Model"
+    sca="PRINT";
+
+2.067..3 T2_IMA_SERNO ANS 1-50 1
+    and("T2_IMA_MAK")
+    and("T2_IMA_MODL")
+    desc="Originating Fingerprint Reading System Serial Number"
+    sca="PRINT";
+
+[O, CAR, CPDR, DEK, DEU, DPRS, FIDR, MAP, TPRS M
 ]
 2.070 T2_RAP A 1 0-1
     desc="Request for Electronic Rap Sheet"
@@ -1542,7 +1597,7 @@ FIELDS
     desc="Action to be Taken"
     sca="-,&/# ";
 
-[M, CAR, CNA, CPDR, MAP, DEK, DEU, TPRS, DPRS, LFFS, LFIS, SRE, SRL O, RPSR O, TPRR O, GMR, ERRT O, ERRL O
+[M, CAR, CNA, CPDR, MAP, DEK, DEU, TPRS, DPRS, FIDR, LFFS, LFIS, SRE, SRL O, RPSR O, TPRR O, GMR, ERRT O, ERRL O
 ]
 2.073 T2_CRI ANS 9 1-3
     desc="Controlling Agency Identifier"
@@ -1674,12 +1729,12 @@ FIELDS
         N:No"
     default="Y";
 
-[O, CAR, CNA, CPDR, DEK, DEU, DPRS, MAP, TPRS
+[O, CAR, CNA, CPDR, DEK, DEU, DPRS, FIDR, MAP, TPRS
 ]
 2.084: T2_AMP ANS 1-x 0-14
     desc="Amputated or Bandaged";
 
-[M, CAR, CNA, CPDR, DEK, DEU, DPRS, MAP, TPRS
+[M, CAR, CNA, CPDR, DEK, DEU, DPRS, FIDR, MAP, TPRS
 ]
 2.084..1 T2_AMP_FGP N 2 1
     desc="Finger Position Code"
@@ -1831,6 +1886,17 @@ FIELDS
         Y:Yes|\
         N:No";
 
+[O, FIDR
+]
+2.096 T2_RPR A 1 1
+    desc="Request Photo Record"
+    example="Y"
+    mmap="\
+        Y:Yes|\
+        N:No";
+
+[O, FIDR, LFFS, LFIS
+]
 2.098 T2_NDR N 1-3 0-10
     desc="Name of Designated Repository"
     mmap="\
@@ -1882,7 +1948,7 @@ FIELDS
 
 [M, CAR, CNA, CPDR, DEK, DEU, DPRS, MAP, TPRS, GMR, SRE
 ]
-2.310..1 T2_PER_TYPE_CAT AS 3-37 1
+2.310..1 T2_PER_TYPE_CAT AS 3-50 1
     desc="Biometric Subject Personnel Type"
     sca="_"
     mmap="\
@@ -2651,18 +2717,18 @@ FIELDS
     	DST:Distal Segment|\
     	MED:Medial Segment";
 
-[M, CAR, CNA, CPDR, DEK, DEU, DPRS, MAP, LFFS O, LFIS O, TPRS O, SRE O, GMR O
+[M, CAR, CNA, CPDR, DEK, DEU, DPRS, FIDR, MAP, LFFS O, LFIS O, TPRS O, SRE O, GMR O
 ]
 2.8003: T2_SUBJ_BIRTHDATE ANS 1-x 1-5
     desc="Biometric Subject Birth Date";
 
-[M, CAR, CNA, CPDR, DEK, DEU, DPRS, MAP, LFFS, LFIS, TPRS, SRE, GMR
+[M, CAR, CNA, CPDR, DEK, DEU, DPRS, FIDR, MAP, LFFS, LFIS, TPRS, SRE, GMR
 ]
 2.8003..1 T2_SUBJ_BIRTHDATE_DOB N 8 1
     desc="Birth Date"
     default="00000000";
 
-[O, CAR, CNA, CPDR, DEK, DEU, DPRS, LFFS, LFIS, MAP, TPRS, SRE, GMR
+[O, CAR, CNA, CPDR, DEK, DEU, DPRS, FIDR, LFFS, LFIS, MAP, TPRS, SRE, GMR
 ]
 2.8003..2 T2_SUBJ_BIRTHDATE_DATEVLD A 3 0-1
     desc="Date Validity"
@@ -2712,7 +2778,7 @@ FIELDS
         C:Chinese|\
         H:Hebrew";
 
-[O, CAR, CNA, CPDR, DEK, DEU, DPRS, MAP
+[O, CAR, CNA, CPDR, DEK, DEU, DPRS, FIDR, MAP
 ]
 2.8007 T2_SUBJ_CTZ A 3 0-5
     desc="Biometric Subject Citizenship"
@@ -2991,7 +3057,7 @@ FIELDS
         ZWE:Zimbabwe|\
         XXX:Unspecified";
 
-[M, CAR, CNA, CPDR, DEK, DPRS, MAP, DEU O, LFFS O, LFIS O
+[M, CAR, CNA, CPDR, DEK, DPRS, MAP, DEU O, FIDR, LFFS O, LFIS O
 ]
 2.8008 T2_SUBJ_RAC A 1-2 1-5
     desc="Biometric Subject Ethnic/Racial Characteristic"
@@ -3196,30 +3262,32 @@ FIELDS
         Y:Yes|\
         N:No";
 
+[O, CAR, CNA, CPDR, DEK, DEU, DPRS, FIDR, LFFS, LFIS, MAP, SRE, SRL, TPRS
+]
 2.8025 T2_DEROG_COM ANS 1-120 0-1
     desc="Biometric Subject Derogatory Comment";
 
-[O, CAR, CNA, CPDR, DEK, DPRS, MAP, TPRS, SRE, GMR
+[O, CAR, CNA, CPDR, DEK, DPRS, FIDR, MAP, TPRS, SRE, GMR
 ]
 2.8026: T2_SUBJ_AKA ANS 1-x 0-10
     desc="Biometric Subject Alternate Name";
 
-[M, CAR, CNA, CPDR, DEK, DPRS, MAP, TPRS, SRE, GMR
+[M, CAR, CNA, CPDR, DEK, DPRS, FIDR, MAP, TPRS, SRE, GMR
 ]
 2.8026..1 T2_SUBJ_AKA_NAM1 ANS 1-50 1
     desc="Name - One";
 
-[O, CAR, CNA, CPDR, DEK, DPRS, MAP, TPRS, SRE, GMR
+[O, CAR, CNA, CPDR, DEK, DPRS, FIDR, MAP, TPRS, SRE, GMR
 ]
 2.8026..2 T2_SUBJ_AKA_NAM2 ANS 1-50 1
     desc="Name - Two";
 
-[M, CAR, CNA, CPDR, DEK, DPRS, MAP, TPRS, SRE, GMR
+[M, CAR, CNA, CPDR, DEK, DPRS, FIDR, MAP, TPRS, SRE, GMR
 ]
 2.8026..3 T2_SUBJ_AKA_NAM3 ANS 1-50 0-1
     desc="Name - Three";
 
-[O, CAR, CNA, CPDR, DEK, DPRS, MAP, TPRS, SRE, GMR
+[O, CAR, CNA, CPDR, DEK, DPRS, FIDR, MAP, TPRS, SRE, GMR
 ]
 2.8026..4 T2_SUBJ_AKA_NAM4 ANS 1-50 0-1
     desc="Name - Four";
@@ -3244,7 +3312,7 @@ FIELDS
         Urdu:Urdu|\
         NONE:No Transliteration Applied";
 
-[M, CAR, CNA, CPDR, DEK, DPRS, MAP, TPRS, SRE, GMR
+[M, CAR, CNA, CPDR, DEK, DPRS, FIDR, MAP, TPRS, SRE, GMR
 ]
 2.8026..8 T2_SUBJ_AKA_NAMCATCD A 3-4 1
     desc="Person Alternate Name Category Code"
@@ -3253,7 +3321,7 @@ FIELDS
         MAID:Maiden|\
         NICK:Nickname"
     default="AKA";
-[O, CAR, CNA, CPDR, DEK, DPRS, MAP, TPRS, SRE, GMR
+[O, CAR, CNA, CPDR, DEK, DPRS, FIDR, MAP, TPRS, SRE, GMR
 ]
 2.8026..9 T2_SUBJ_AKA_COM ANS 1-126 0-1
     desc="Comment";
@@ -3921,7 +3989,7 @@ FIELDS
         ORT:Other Reported|\
         SRT:Self-Reported";
 
-[O, CAR, CNA, CPDR, DEK, DPRS, MAP, TPRS, GMR
+[O, CAR, CNA, CPDR, DEK, DPRS, FIDR, MAP, TPRS, GMR
 ]
 2.8032: T2_SUBJ_PHONE ANS 1-x 0-1
     desc="Biometric Subject Contact Telephone";
@@ -3941,7 +4009,7 @@ FIELDS
 2.8032..2 T2_SUBJ_PHONE_PHNUM ANS 1-50 1
     desc="Phone Number";
 
-[O, CAR, CNA, CPDR, DEK, DPRS, MAP, TPRS, GMR
+[O, CAR, CNA, CPDR, DEK, DPRS, FIDR, MAP, TPRS, GMR
 ]
 2.8032..3 T2_SUBJ_PHONE_PHEXT N 1-20 0-1
     desc="Phone Extension";
@@ -3949,12 +4017,12 @@ FIELDS
 2.8032..4 T2_SUBJ_PHONE_TELDESC ANS 1-20 1
     desc="Phone Number Description";
 
-[M, CAR, CNA, CPDR, DEK, DPRS, MAP, LFFS O, LFIS O, RPSR O, SRE O, GMR O
+[M, CAR, CNA, CPDR, DEK, DPRS, FIDR, MAP, LFFS O, LFIS O, RPSR O, SRE O, GMR O
 ]
 2.8033: T2_SUBJ_POB ANS 1-x 1
     desc="Biometric Subject Birth Location";
 
-[O, CAR, CNA, CPDR, DEK, DPRS, LFFS, LFIS, MAP, RPSR, SRE, GMR
+[O, CAR, CNA, CPDR, DEK, DPRS, FIDR, LFFS, LFIS, MAP, RPSR, SRE, GMR
 ]
 2.8033..1 T2_SUBJ_POB_CITY ANS 1-50 0-1
     desc="City";
@@ -3962,7 +4030,7 @@ FIELDS
 2.8033..2 T2_SUBJ_POB_STATE ANS 1-50 0-1
     desc="State / Province";
 
-[M, CAR, CNA, CPDR, DEK, DPRS, LFFS, LFIS, MAP, RPSR, SRE, GMR
+[M, CAR, CNA, CPDR, DEK, DPRS, FIDR, LFFS, LFIS, MAP, RPSR, SRE, GMR
 ]
 2.8033..3 T2_SUBJ_POB_CTRY AN 3 1
     desc="Country Code"
@@ -4240,9 +4308,9 @@ FIELDS
         ZMB:Zambia|\
         ZWE:Zimbabwe|\
         XXX:Unspecified|\
-		AX1: Unknown";
+	AX1: Unknown";
 
-[O, CAR, CNA, CPDR, DEK, DPRS, LFFS, LFIS, MAP, RPSR, SRE, GMR
+[O, CAR, CNA, CPDR, DEK, DPRS, FIDR, LFFS, LFIS, MAP, RPSR, SRE, GMR
 ]
 2.8033..4 T2_SUBJ_POB_VLG ANS 1-50 0-1
     desc="Village";
@@ -4549,12 +4617,12 @@ FIELDS
     desc="Comment";
 
 
-[M, CAR, CNA, CPDR, DEK, DEU, DPRS, MAP, GMR, SRE, LFFS O, LFIS O
+[M, CAR, CNA, CPDR, DEK, DEU, DPRS, FIDR, MAP, GMR, SRE, LFFS O, LFIS O
 ]
 2.8035: T2_SUBJ_HEIGHT ANS 1-x 1-2
     desc="Biometric Subject Height Measurement";
 
-[M, CAR, CNA, CPDR, DEK, DEU, DPRS, GMR, SRE, LFFS, LFIS, MAP
+[M, CAR, CNA, CPDR, DEK, DEU, DPRS, FIDR, GMR, SRE, LFFS, LFIS, MAP
 ]
 2.8035..1 T2_SUBJ_HEIGHT_HGT NS 2-4 1
     desc="Height Value"
@@ -4579,12 +4647,12 @@ FIELDS
         SRT:Self-Reported"
     default="EST";
 
-[M, CAR, CNA, CPDR, DEK, DEU, DPRS, MAP, GMR, SRE, LFFS O, LFIS O
+[M, CAR, CNA, CPDR, DEK, DEU, DPRS, FIDR, MAP, GMR, SRE, LFFS O, LFIS O
 ]
 2.8036: T2_SUBJ_WEIGHT ANS 1-x 1-2
     desc="Biometric Subject Weight Measurement";
 
-[M, CAR, CNA, CPDR, DEK, DEU, DPRS, MAP, GMR, SRE, LFFS, LFIS
+[M, CAR, CNA, CPDR, DEK, DEU, DPRS, FIDR, MAP, GMR, SRE, LFFS, LFIS
 ]
 2.8036..1 T2_SUBJ_WEIGHT_WGT N 1-3 1
     desc="Weight Value"
@@ -4607,12 +4675,12 @@ FIELDS
         SRT:Self-Reported"
     default="EST";
 
-[M, CAR, CNA, CPDR, DEK, DEU, DPRS, MAP, GMR, SRE, LFFS O, LFIS O
+[M, CAR, CNA, CPDR, DEK, DEU, DPRS, FIDR, MAP, GMR, SRE, LFFS O, LFIS O
 ]
 2.8037: T2_SUBJ_EYE ANS 1-x 1-2
     desc="Biometric Subject Eye Color";
 
-[M, CAR, CNA, CPDR, DEK, DEU, DPRS, MAP, GMR, SRE, LFFS, LFIS
+[M, CAR, CNA, CPDR, DEK, DEU, DPRS, FIDR, MAP, GMR, SRE, LFFS, LFIS
 ]
 2.8037..1 T2_SUBJ_EYE_EPOS N 1 1
     desc="Eye Position"
@@ -5321,27 +5389,27 @@ FIELDS
 2.8039..12 T2_GRPMBR_COM ANS 1-126 0-1
     desc="Comment";
 
-[M, CAR, CNA, CPDR, DEK, DEU, DPRS, MAP, GMR, SRE, RPSR O, SRL O, TPRS O
+[M, CAR, CNA, CPDR, DEK, DEU, DPRS, FIDR, MAP, GMR, SRE, RPSR O, SRL O, TPRS O
 ]
 2.8040: T2_SUBJ_NAME ANS 1-x 1
     desc="Biometric Subject Name";
 
-[M, CAR, CNA, CPDR, DEK, DEU, DPRS, MAP, RPSR, GMR, SRE, SRL, TPRS
+[M, CAR, CNA, CPDR, DEK, DEU, DPRS, FIDR, MAP, RPSR, GMR, SRE, SRL, TPRS
 ]
 2.8040..1 T2_SUBJ_NAME_NAM1 ANS 1-50 1
     desc="Name - One";
 
-[O, CAR, CNA, CPDR, DEK, DEU, DPRS, MAP, RPSR, GMR, SRE, SRL, TPRS
+[O, CAR, CNA, CPDR, DEK, DEU, DPRS, FIDR, MAP, RPSR, GMR, SRE, SRL, TPRS
 ]
 2.8040..2 T2_SUBJ_NAME_NAM2 ANS 1-50 1
     desc="Name - Two";
 
-[M, CAR, CNA, CPDR, DEK, DEU, DPRS, MAP, RPSR, GMR, SRE, SRL, TPRS
+[M, CAR, CNA, CPDR, DEK, DEU, DPRS, FIDR, MAP, RPSR, GMR, SRE, SRL, TPRS
 ]
 2.8040..3 T2_SUBJ_NAME_NAM3 ANS 1-50 0-1
     desc="Name - Three";
 
-[O, CAR, CNA, CPDR, DEK, DEU, DPRS, MAP, RPSR, GMR, SRE, SRL, TPRS
+[O, CAR, CNA, CPDR, DEK, DEU, DPRS, FIDR, MAP, RPSR, GMR, SRE, SRL, TPRS
 ]
 2.8040..4 T2_SUBJ_NAME_NAM4 ANS 1-50 0-1
     desc="Name - Four";
@@ -12359,10 +12427,11 @@ FIELDS
 11.034: T11_VCI N 1-6 0-600000
     desc="Vocal Collision Identifier";
 
-[M, CAR, CNA, MAP, DPRS
+[O, CAR, CNA, MAP, DPRS
 ]
 11.035: T11_PPY ANS 1-x 1-9
-    desc="Vocal Segment Processing Priority";
+    desc="Vocal Segment Processing Priority"
+    and("T11_VOC");
 
 11.035..1 T11_PPY_SIL NS 1-6 1-600000
     desc="Segment Identifier List"
@@ -19374,9 +19443,9 @@ FIELDS
 20.003 T20_CAR A 1 1
     desc="SRN Cardinality"
     mmap="\
-        S:The representation in this Type|\
-        D:The representation in this Type|\
-        M:A single biometric type record, excluding Type";
+        S:One to one|\
+        D:One to many|\
+        M:Many to one";
 
 20.004 T20_SRC ANS 1-x 1
     desc="Source Agency";
